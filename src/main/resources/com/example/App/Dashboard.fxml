@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1024.0" prefWidth="1440.0" styleClass="Dashboard" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox prefHeight="1024.0" prefWidth="254.0" styleClass="Menu" stylesheets="@style.css">
+         <children>
+            <VBox prefHeight="630.0" prefWidth="254.0" spacing="56.0">
+               <children>
+                  <HBox prefHeight="30.0" prefWidth="116.0" spacing="20.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="YOURLOGO">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="448.0" prefWidth="130.0" spacing="64.0">
+                     <children>
+                        <VBox prefHeight="248.0" prefWidth="130.0" spacing="32.0">
+                           <children>
+                              <HBox maxWidth="129.0" minHeight="24.0" prefHeight="24.0" prefWidth="129.0">
+                                 <children>
+                                    <Text fill="#4a85f6" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="30.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox layoutX="42.0" layoutY="10.0" maxHeight="24.0" maxWidth="85.0" minHeight="24.0" minWidth="85.0" prefHeight="24.0" prefWidth="85.0">
+                                 <children>
+                                    <Text fill="#757575" strokeType="OUTSIDE" strokeWidth="0.0" text="User">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="30.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox layoutX="42.0" layoutY="36.0" maxWidth="130.0" minHeight="24.0" prefHeight="24.0" prefWidth="130.0">
+                                 <children>
+                                    <Text fill="#757575" strokeType="OUTSIDE" strokeWidth="0.0" text="Documents" wrappingWidth="80.453125">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="30.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox layoutX="42.0" layoutY="63.0" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="24.0" prefWidth="95.0">
+                                 <children>
+                                    <Text fill="#757575" strokeType="OUTSIDE" strokeWidth="0.0" text="Photos">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="30.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox layoutX="42.0" layoutY="166.0" maxWidth="-Infinity" minHeight="-Infinity" prefHeight="24.0" prefWidth="117.0">
+                                 <children>
+                                    <Text fill="#757575" strokeType="OUTSIDE" strokeWidth="0.0" text="Hierarchy">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="30.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                        <VBox layoutX="10.0" layoutY="10.0" prefHeight="248.0" prefWidth="130.0" spacing="32.0">
+                           <children>
+                              <HBox maxWidth="-Infinity" minHeight="-Infinity" prefHeight="24.0" prefWidth="109.0">
+                                 <children>
+                                    <Text fill="#757575" strokeType="OUTSIDE" strokeWidth="0.0" text="Message">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="30.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox layoutX="42.0" layoutY="10.0" maxHeight="24.0" maxWidth="85.0" minHeight="24.0" minWidth="85.0" prefHeight="24.0" prefWidth="85.0">
+                                 <children>
+                                    <Text fill="#757575" strokeType="OUTSIDE" strokeWidth="0.0" text="User">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="30.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox layoutX="42.0" layoutY="36.0" maxWidth="130.0" minHeight="24.0" prefHeight="24.0" prefWidth="130.0">
+                                 <children>
+                                    <Text fill="#757575" strokeType="OUTSIDE" strokeWidth="0.0" text="Documents" wrappingWidth="80.453125">
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="30.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="56.0" left="32.0" right="56.0" top="40.0" />
+               </padding>
+            </VBox>
+            <HBox prefHeight="394.0" prefWidth="254.0">
+               <padding>
+                  <Insets left="32.0" right="32.0" top="24.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+      <Pane layoutX="686.0" layoutY="969.0" prefHeight="25.59" prefWidth="359.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="1.0" layoutX="114.0" layoutY="25.59" stroke="#717171" strokeType="INSIDE" width="44.0" />
+            <Text fill="#717171" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items per page:" wrappingWidth="73.9283218383789">
+               <font>
+                  <Font size="10.8" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <AnchorPane accessibleRole="MENU_ITEM" cache="true" layoutX="294.0" layoutY="229.0" prefHeight="629.0" prefWidth="1144.0" styleClass="List_Users" stylesheets="@style.css">
+         <children>
+            <Rectangle id="Boarder_ListUser" fx:id="Boarder_ListUser" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="629.0" layoutX="3.0" stroke="#eff4fa" strokeLineCap="ROUND" strokeType="INSIDE" styleClass="Boarder_ListUser" width="1139.0" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eff4fa" height="60.0" stroke="#eff4fa" strokeType="INSIDE" width="1144.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="57.0" />
+            <AnchorPane prefHeight="21.0" prefWidth="1144.0" AnchorPane.topAnchor="46.0" />
+            <Text fill="#222b45" strokeType="OUTSIDE" strokeWidth="0.0" text="List Users" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Text>
+            <AnchorPane prefHeight="49.0" prefWidth="1144.0" AnchorPane.topAnchor="79.0">
+               <children>
+                  <AnchorPane prefHeight="21.0" prefWidth="1144.0" AnchorPane.topAnchor="28.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eff4fa" height="1.0" stroke="#eff4fa" strokeType="INSIDE" width="1144.0" AnchorPane.topAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#8f9bb3" layoutX="1059.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Action" AnchorPane.leftAnchor="1059.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#8f9bb3" layoutX="782.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Role" AnchorPane.leftAnchor="782.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#8f9bb3" layoutX="572.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Create Date" AnchorPane.leftAnchor="572.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#8f9bb3" layoutX="34.0" layoutY="17.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" AnchorPane.leftAnchor="34.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="63.0" prefWidth="1104.0" styleClass="List_Users" stylesheets="@style.css" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="138.0">
+               <children>
+                  <AnchorPane prefHeight="26.0" prefWidth="111.0" AnchorPane.leftAnchor="346.0" AnchorPane.topAnchor="3.0">
+                     <children>
+                        <Rectangle id="Button" fx:id="Button" arcHeight="5.0" arcWidth="5.0" fill="#0095ff" height="26.0" stroke="#0095ff" strokeType="INSIDE" width="111.0">
+                           <styleClass>
+                              <String fx:value="Button" />
+                              <String fx:value="List_Users" />
+                           </styleClass>
+                        </Rectangle>
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Super Admin" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="5.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="21.0" prefWidth="1104.0" AnchorPane.topAnchor="42.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eff4fa" height="1.0" stroke="#eff4fa" strokeType="INSIDE" width="1104.0" AnchorPane.topAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#222b45" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem Ipsum" AnchorPane.leftAnchor="757.0" AnchorPane.topAnchor="9.0" />
+                  <Text fill="#222b45" layoutX="767.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24 Otc, 2015" AnchorPane.leftAnchor="547.0" AnchorPane.topAnchor="9.0" />
+                  <Text fill="#222b45" layoutX="557.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="David Wagner" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#8f9bb3" layoutX="48.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="david_wagner@example" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="16.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="30.0" layoutY="148.0" prefHeight="63.0" prefWidth="1104.0" styleClass="List_Users" stylesheets="@style.css" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="211.0">
+               <children>
+                  <AnchorPane prefHeight="26.0" prefWidth="111.0" AnchorPane.leftAnchor="346.0" AnchorPane.topAnchor="3.0">
+                     <children>
+                        <Rectangle id="Button" fx:id="Button1" arcHeight="5.0" arcWidth="5.0" fill="#0095ff" height="26.0" stroke="#0095ff" strokeType="INSIDE" styleClass="Button" width="111.0" />
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" AnchorPane.leftAnchor="34.0" AnchorPane.topAnchor="5.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="21.0" prefWidth="1104.0" AnchorPane.topAnchor="42.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eff4fa" height="1.0" stroke="#eff4fa" strokeType="INSIDE" width="1104.0" AnchorPane.topAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#222b45" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem Ipsum" AnchorPane.leftAnchor="757.0" AnchorPane.topAnchor="9.0" />
+                  <Text fill="#222b45" layoutX="767.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="24 Otc, 20215" AnchorPane.leftAnchor="547.0" AnchorPane.topAnchor="9.0" />
+                  <Text fill="#222b45" layoutX="557.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ina Hogan" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#8f9bb3" layoutX="48.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="windler.warren@runte.net" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="16.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="30.0" layoutY="221.0" prefHeight="63.0" prefWidth="1104.0" styleClass="List_Users" stylesheets="@style.css" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="284.0">
+               <children>
+                  <AnchorPane prefHeight="26.0" prefWidth="111.0" AnchorPane.leftAnchor="346.0" AnchorPane.topAnchor="3.0">
+                     <children>
+                        <Rectangle id="Button" fx:id="Button11" arcHeight="5.0" arcWidth="5.0" fill="#0095ff" height="26.0" stroke="#0095ff" strokeType="INSIDE" styleClass="Button" width="111.0" />
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="HR Admin" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="5.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="21.0" prefWidth="1104.0" AnchorPane.topAnchor="42.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eff4fa" height="1.0" stroke="#eff4fa" strokeType="INSIDE" width="1104.0" AnchorPane.topAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#222b45" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem Ipsum" AnchorPane.leftAnchor="757.0" AnchorPane.topAnchor="9.0" />
+                  <Text fill="#222b45" layoutX="767.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18 Dec, 2015" AnchorPane.leftAnchor="547.0" AnchorPane.topAnchor="9.0" />
+                  <Text fill="#222b45" layoutX="557.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Devin Harmon" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#8f9bb3" layoutX="48.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="windler.warren@runte.net" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="16.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="30.0" layoutY="294.0" prefHeight="63.0" prefWidth="1104.0" styleClass="List_Users" stylesheets="@style.css" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="357.0">
+               <children>
+                  <AnchorPane prefHeight="26.0" prefWidth="111.0" AnchorPane.leftAnchor="346.0" AnchorPane.topAnchor="3.0">
+                     <children>
+                        <Rectangle id="Button" fx:id="Button111" arcHeight="5.0" arcWidth="5.0" fill="#eff4fa" height="26.0" stroke="#eff4fa" strokeType="INSIDE" styleClass="Button" width="111.0" />
+                        <Text fill="#8f9bb3" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="5.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="21.0" prefWidth="1104.0" AnchorPane.topAnchor="42.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eff4fa" height="1.0" stroke="#eff4fa" strokeType="INSIDE" width="1104.0" AnchorPane.topAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#222b45" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem Ipsum" AnchorPane.leftAnchor="757.0" AnchorPane.topAnchor="9.0" />
+                  <Text fill="#222b45" layoutX="767.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="8 Oct, 2016" AnchorPane.leftAnchor="547.0" AnchorPane.topAnchor="9.0" />
+                  <Text fill="#222b45" layoutX="557.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lena Page" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#8f9bb3" layoutX="48.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="camila_ledner@gmail.com" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="16.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="30.0" layoutY="148.0" prefHeight="63.0" prefWidth="1104.0" styleClass="List_Users" stylesheets="@style.css" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="430.0">
+               <children>
+                  <AnchorPane prefHeight="26.0" prefWidth="111.0" AnchorPane.leftAnchor="346.0" AnchorPane.topAnchor="3.0">
+                     <children>
+                        <Rectangle id="Button" fx:id="Button2" arcHeight="5.0" arcWidth="5.0" fill="#0095ff" height="26.0" stroke="#0095ff" strokeType="INSIDE" styleClass="Button" width="111.0" />
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Super Admin" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="5.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="21.0" prefWidth="1104.0" AnchorPane.topAnchor="42.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eff4fa" height="1.0" stroke="#eff4fa" strokeType="INSIDE" width="1104.0" AnchorPane.topAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#222b45" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem Ipsum" AnchorPane.leftAnchor="757.0" AnchorPane.topAnchor="9.0" />
+                  <Text fill="#222b45" layoutX="767.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="15 Jun, 2017" AnchorPane.leftAnchor="547.0" AnchorPane.topAnchor="9.0" />
+                  <Text fill="#222b45" layoutX="557.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Eula Horton" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#8f9bb3" layoutX="48.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="edula_dorton1221@gmail.com" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="16.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="30.0" layoutY="294.0" prefHeight="63.0" prefWidth="1104.0" styleClass="List_Users" stylesheets="@style.css" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="503.0">
+               <children>
+                  <AnchorPane prefHeight="26.0" prefWidth="111.0" AnchorPane.leftAnchor="346.0" AnchorPane.topAnchor="3.0">
+                     <children>
+                        <Rectangle id="Button" fx:id="Button112" arcHeight="5.0" arcWidth="5.0" fill="#0095ff" height="26.0" stroke="#0095ff" strokeType="INSIDE" styleClass="Button" width="111.0" />
+                        <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="HR Admin" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="5.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane prefHeight="21.0" prefWidth="1104.0" AnchorPane.topAnchor="42.0">
+                     <children>
+                        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#eff4fa" height="1.0" stroke="#eff4fa" strokeType="INSIDE" width="1104.0" AnchorPane.topAnchor="10.0" />
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#222b45" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem Ipsum" AnchorPane.leftAnchor="757.0" AnchorPane.topAnchor="9.0" />
+                  <Text fill="#222b45" layoutX="767.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="12 Jan, 2019" AnchorPane.leftAnchor="547.0" AnchorPane.topAnchor="9.0" />
+                  <Text fill="#222b45" layoutX="557.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Victoria Perez" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#8f9bb3" layoutX="48.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="terrill.wiza@hotmail.com" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="16.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="30.0" layoutY="367.0" prefHeight="32.0" prefWidth="1094.0" styleClass="List_Users" stylesheets="@style.css" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="576.0">
+               <children>
+                  <AnchorPane prefHeight="26.0" prefWidth="111.0" AnchorPane.leftAnchor="346.0" AnchorPane.topAnchor="3.0">
+                     <children>
+                        <Rectangle id="Button" fx:id="Button1111" arcHeight="5.0" arcWidth="5.0" fill="#eff4fa" height="26.0" stroke="#eff4fa" strokeType="INSIDE" styleClass="Button" width="111.0" />
+                        <Text fill="#8f9bb3" strokeType="OUTSIDE" strokeWidth="0.0" text="Employee" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="5.0">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <Text fill="#222b45" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem Ipsum" AnchorPane.leftAnchor="757.0" AnchorPane.topAnchor="9.0" />
+                  <Text fill="#222b45" layoutX="767.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="21 July, 2020" AnchorPane.leftAnchor="547.0" AnchorPane.topAnchor="9.0" />
+                  <Text fill="#222b45" layoutX="557.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cora Medina" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="0.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#8f9bb3" layoutX="48.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="hagenes.isai@hotmail.com" AnchorPane.leftAnchor="38.0" AnchorPane.topAnchor="16.0">
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4a85f6" height="38.0" stroke="#4a85f6" strokeType="INSIDE" width="4.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="120.0" />
+      <AnchorPane prefHeight="51.0" prefWidth="1120.1" AnchorPane.leftAnchor="297.0" AnchorPane.topAnchor="31.0">
+         <children>
+            <VBox prefHeight="51.0" prefWidth="121.0">
+               <children>
+                  <Text fill="#0a0a0a" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello, Lekan">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Text fill="#757575" strokeType="OUTSIDE" strokeWidth="0.0" text="Have a nice day">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </VBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="48.0" prefWidth="291.05" spacing="24.0" AnchorPane.leftAnchor="829.0" AnchorPane.topAnchor="2.0">
+               <children>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="24.0" prefWidth="24.0">
+                     <children>
+                        <Circle cache="true" fill="#4a85f6" layoutX="-94.0" layoutY="94.0" nodeOrientation="LEFT_TO_RIGHT" radius="5.0" stroke="#4a85f6" strokeMiterLimit="0.0" strokeType="INSIDE" strokeWidth="0.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="3.01">
+                           <cursor>
+                              <Cursor fx:constant="NONE" />
+                           </cursor>
+                        </Circle>
+                     </children>
+                  </AnchorPane>
+                  <Line endX="-100.20712280273438" endY="-46.689476013183594" startX="-100.0" stroke="#c2c2c2" />
+                  <HBox prefHeight="45.05" prefWidth="219.05" spacing="16.0">
+                     <children>
+                        <HBox maxWidth="-Infinity" minHeight="-Infinity" prefHeight="45.05" prefWidth="219.05" spacing="16.0">
+                           <children>
+                              <Circle fill="#bfbfbf" radius="25.0" stroke="#bfbfbf" strokeType="INSIDE" />
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox maxWidth="-Infinity" minHeight="-Infinity" prefHeight="42.0" prefWidth="110.0">
+                                       <children>
+                                          <Text fill="#0a0a0a" strokeType="OUTSIDE" strokeWidth="0.0" text="Lekan Okeowo">
+                                             <font>
+                                                <Font size="16.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#0a0a0a" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </HBox>
+                     </children>
+                     <HBox.margin>
+                        <Insets right="8.0" />
+                     </HBox.margin>
+                  </HBox>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="Users_Dashboard" focusTraversable="true" layoutX="262.0" layoutY="120.0" prefHeight="100.0" prefWidth="1133.0" styleClass="Users_Dashboard" stylesheets="@style.css" AnchorPane.leftAnchor="262.0" AnchorPane.topAnchor="120.0">
+         <children>
+            <Text fill="#4a85f6" strokeType="OUTSIDE" strokeWidth="0.0" text="Users Dashboard" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <HBox layoutX="40.0" prefHeight="48.0" prefWidth="671.99" spacing="16.0" style="-fx-background-radius: 16px; -fx-background-color: #ffffff;" styleClass="Users_Dashboard" stylesheets="@style.css" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="49.41">
+               <padding>
+                  <Insets bottom="12.0" left="20.0" right="12.0" top="12.0" />
+               </padding>
+               <children>
+                  <TextField prefHeight="26.0" prefWidth="635.0" promptText="Search">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <AnchorPane prefHeight="54.34" prefWidth="134.0" AnchorPane.leftAnchor="700.0" AnchorPane.topAnchor="49.66">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#4a85f6" height="53.0" stroke="#4a85f6" strokeType="INSIDE" width="134.0" />
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Add use +" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="13.0">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="16.0" prefWidth="267.0" AnchorPane.leftAnchor="847.0" AnchorPane.topAnchor="66.0">
+               <children>
+                  <AnchorPane prefHeight="16.0" prefWidth="98.0" AnchorPane.leftAnchor="7.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Text fill="#404040" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sort by">
+                           <font>
+                              <Font size="17.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="17.0" layoutY="10.0" prefHeight="16.0" prefWidth="98.0" AnchorPane.leftAnchor="112.0" AnchorPane.topAnchor="0.0">
+                     <Text fill="#404040" layoutY="14.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saved search">
+                        <font>
+                           <Font size="17.0" />
+                        </font>
+                     </Text>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </AnchorPane>
+   </children>
+</AnchorPane>
