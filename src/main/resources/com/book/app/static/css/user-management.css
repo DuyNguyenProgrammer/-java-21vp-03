@@ -5,10 +5,12 @@
 .table-view .column-header {
     -fx-background-color: #eff4fa;
     -fx-pref-height: 50px;
+
 }
 
 .table-view .column-header .label {
     -fx-text-fill: #8f9bb3;
+
 }
 
 .table-view .column {
@@ -65,6 +67,7 @@
 .primary-button:pressed {
     -fx-background-color: #0056b3; /* Màu nền khi nhấn */
 }
+
 /* Remove default button appearance */
 /* Remove default button appearance */
 .combo-box .arrow-button {
@@ -73,6 +76,7 @@
 
 /* Customize arrow icon */
 .combo-box .arrow-button .arrow {
+
     -fx-background-size: 10px;
 }
 
@@ -93,3 +97,9 @@
     -fx-border-color: #ccc; /* Border color of selected item */
     -fx-border-width: 1px; /* Border width of selected item */
 }
+
+.choice-box .list-cell:selected .text {
+    -fx-text-fill: transperent;
+}
+
+.choice-box.selected > .label { -fx-text-fill: transperent; }
