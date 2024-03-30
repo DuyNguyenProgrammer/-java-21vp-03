@@ -2,6 +2,8 @@ package com.book.app.Controller;
 
 import com.book.app.MainApplication;
 import com.book.app.Utils.AppUtils;
+import com.book.app.Utils.TokenUtil;
+import com.book.app.Utils.UIUtils;
 import javafx.animation.TranslateTransition;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -53,14 +55,13 @@ public class HomeController implements Initializable {
     @FXML
     private Circle author1, author2, author3;
     @FXML
-    private Button logout;
+    private Button logout, btnCategory, btnAuthor, btnPublisher;
     private int currentIndex = 0;
     private int currentIndexHot = 0;
 
     private HBox lastList;
     private HBox hotList;
     private static final String[] IMAGE_URLS = {
-
             "C:\\Users\\PC\\Documents\\book-app-master-03\\src\\main\\resources\\com\\book\\app\\static\\images\\phianambiengioiphiataymattroi.png",
             "C:\\Users\\PC\\Documents\\book-app-master-03\\src\\main\\resources\\com\\book\\app\\static\\images\\phiasaunghican.png",
             "C:\\Users\\PC\\Documents\\book-app-master-03\\src\\main\\resources\\com\\book\\app\\static\\images\\sucuuroicuathanhnu.png",
@@ -75,7 +76,7 @@ public class HomeController implements Initializable {
             "C:\\Users\\PC\\Documents\\book-app-master-03\\src\\main\\resources\\com\\book\\app\\static\\images\\nhungchuyenlaotokyo.png"
     };
     private static final String[] nameBooks = {
-            "phia nam bien gioi phia tay mat troi",
+        "phia nam bien gioi phia tay mat troi",
             "phia sau nghi can",
             "su cuu roi cua thanh nu",
             "tazakit sukuru khong mau van hung nam",
@@ -195,7 +196,7 @@ public class HomeController implements Initializable {
             clip.setArcWidth(20);
             imageView.setClip(clip);
             Pane paneImage = new Pane(imageView);
-            paneImage.setPrefSize(180, 250);
+            paneImage.setPrefSize(180,250);
             paneImage.setLayoutX(10);
             paneImage.setLayoutX(10);
             Pane paneContainer = new Pane();
@@ -209,22 +210,19 @@ public class HomeController implements Initializable {
         preButton2.setOnAction(actionEvent -> preImageHot());
         Image imgAuthor1 = null;
         try {
-            imgAuthor1 = new Image(new FileInputStream(
-                    "C:\\Users\\PC\\Documents\\book-app-master-03\\src\\main\\resources\\com\\book\\app\\static\\images\\jkrowling.jpg"));
+            imgAuthor1 = new Image(new FileInputStream("C:\\Users\\PC\\Documents\\book-app-master-03\\src\\main\\resources\\com\\book\\app\\static\\images\\jkrowling.jpg"));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
         Image imgAuthor2 = null;
         try {
-            imgAuthor2 = new Image(new FileInputStream(
-                    "C:\\Users\\PC\\Documents\\book-app-master-03\\src\\main\\resources\\com\\book\\app\\static\\images\\stevenking.jpg"));
+            imgAuthor2 = new Image(new FileInputStream("C:\\Users\\PC\\Documents\\book-app-master-03\\src\\main\\resources\\com\\book\\app\\static\\images\\stevenking.jpg"));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
         Image imgAuthor3 = null;
         try {
-            imgAuthor3 = new Image(new FileInputStream(
-                    "C:\\Users\\PC\\Documents\\book-app-master-03\\src\\main\\resources\\com\\book\\app\\static\\images\\danielSteel.jpg"));
+            imgAuthor3 = new Image(new FileInputStream("C:\\Users\\PC\\Documents\\book-app-master-03\\src\\main\\resources\\com\\book\\app\\static\\images\\danielSteel.jpg"));
         } catch (FileNotFoundException e) {
             throw new RuntimeException(e);
         }
@@ -234,15 +232,39 @@ public class HomeController implements Initializable {
         logout.setOnAction(event -> {
             try {
                 AppUtils.clearData();
-                handleLogout(event);
+                TokenUtil.deleteToken();
+                handleSwitchOtherScene(event, "login/authen.fxml", null );
             } catch (IOException e) {
                 throw new RuntimeException(e);
+            }
+        });
+        btnCategory.setOnAction(event -> {
+            try {
+                handleSwitchOtherScene(event, "category/category.fxml", "static/css/category/category.css");
+            } catch (Exception e) {
+                throw new RuntimeException();
+            }
+        });
+        btnAuthor.setOnAction(event -> {
+            try {
+                UIUtils.handleSwitchOtherScene(event, "author/authors.fxml", "static/css/author/authors.css");
+            } catch (Exception e) {
+                e.printStackTrace();
+                throw  new RuntimeException();
+            }
+        });
+        btnPublisher.setOnAction(event -> {
+            try {
+                UIUtils.handleSwitchOtherScene(event, "publisher/publisher.fxml", "static/css/publisher/publisher.css");
+            } catch (Exception e) {
+                e.printStackTrace();
+                throw  new RuntimeException();
             }
         });
     }
 
     private void preImageHot() {
-        if (currentIndexHot > 0) {
+        if (currentIndexHot >  0) {
             currentIndexHot--;
             double targetX = -currentIndexHot * 200; // 160 = kích thước hình ảnh (150) + khoảng cách (10)
             TranslateTransition transition = new TranslateTransition(Duration.seconds(0.5), hotList);
@@ -250,19 +272,19 @@ public class HomeController implements Initializable {
             transition.play();
         }
     }
-
     private void nextImageHot() {
         if (currentIndexHot < hotList.getChildren().size() - 4) {
             currentIndexHot++;
-            double targetX = -currentIndexHot * 200; // 160 = kích thước hình ảnh (150) + khoảng cách (10)
+            double targetX = - currentIndexHot * 200; // 160 = kích thước hình ảnh (150) + khoảng cách (10)
             TranslateTransition transition = new TranslateTransition(Duration.seconds(0.5), hotList);
             transition.setToX(targetX);
             transition.play();
         }
     }
 
+
     private void preImage() {
-        if (currentIndex > 0) {
+        if (currentIndex >  0) {
             currentIndex--;
             double targetX = -currentIndex * 327; // 160 = kích thước hình ảnh (150) + khoảng cách (10)
             TranslateTransition transition = new TranslateTransition(Duration.seconds(0.5), lastList);
@@ -270,23 +292,24 @@ public class HomeController implements Initializable {
             transition.play();
         }
     }
-
     private void nextImage() {
         if (currentIndex < lastList.getChildren().size() - 3) {
             currentIndex++;
-            double targetX = -currentIndex * 327; // 160 = kích thước hình ảnh (150) + khoảng cách (10)
+            double targetX = - currentIndex * 327; // 160 = kích thước hình ảnh (150) + khoảng cách (10)
             TranslateTransition transition = new TranslateTransition(Duration.seconds(0.5), lastList);
             transition.setToX(targetX);
             transition.play();
         }
     }
-
-    private void handleLogout(ActionEvent event) throws IOException {
+    private void handleSwitchOtherScene(ActionEvent event, String directoryClass, String directoryCss) throws IOException {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource(rootDirectory + "login/authen.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource(rootDirectory  + directoryClass));
             Parent root = loader.load();
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
             Scene scene = new Scene(root, 1280, 800);
+            if (directoryCss != null) {
+                scene.getStylesheets().add(getClass().getResource(rootDirectory + directoryCss).toExternalForm());
+            }
             stage.setResizable(false);
             stage.setScene(scene);
             stage.show();
