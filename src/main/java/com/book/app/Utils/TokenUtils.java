@@ -1,8 +1,6 @@
 package com.book.app.Utils;
 
 import javax.crypto.Cipher;
-import javax.crypto.SecretKey;
-import javax.crypto.spec.GCMParameterSpec;
 import javax.crypto.spec.SecretKeySpec;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -14,7 +12,7 @@ import java.security.MessageDigest;
 import java.util.Base64;
 import java.util.Properties;
 
-public class TokenUtils {
+public class TokenUtil {
     private static final String ALGORITHM = "AES";
     private static final String SECRET_KEY = "your_secret_key_here";
 
