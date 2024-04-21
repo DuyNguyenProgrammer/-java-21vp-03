@@ -27,14 +27,14 @@
     -fx-border-color: #80bdff;
     -fx-box-shadow: none;
 }
+.button-menu {
+    -fx-background-color: transparent;
+}
 .button-control {
     -fx-text-fill: #fff;
     -fx-font-weight: 700;
     -fx-border-color: transparent;
     -fx-border-radius: 8px;
-}
-.button:hover {
-    -fx-cursor: hand;
 }
 .delete-button {
     -fx-background-color: #f41b6a;
