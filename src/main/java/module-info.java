@@ -21,4 +21,8 @@ module com.book.app {
     opens com.book.app.Controller.employee.category to javafx.fxml;
     exports com.book.app.Controller.employee.publisher;
     opens com.book.app.Controller.employee.publisher to javafx.fxml;
+    exports com.book.app.Controller.employee.book;
+    opens com.book.app.Controller.employee.book to javafx.fxml;
+    exports com.book.app.Controller.employee.inventory;
+    opens com.book.app.Controller.employee.inventory to javafx.fxml;
 }
