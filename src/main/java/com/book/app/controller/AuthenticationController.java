@@ -2,20 +2,13 @@ package com.book.app.Controller;
 
 import com.book.app.Dao.impl.EmployeeDaoImpl;
 import com.book.app.Entity.EmployeeEntity;
-import com.book.app.MainApplication;
 import com.book.app.Utils.AppUtils;
 import com.book.app.Utils.TokenUtil;
 import com.book.app.Utils.UIUtils;
-import com.book.app.Utils.UUIDUtils;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Node;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.*;
-import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -76,12 +69,13 @@ public class AuthenticationController implements Initializable {
         if (user != null) {
             if (remember.isSelected()) {
                 Key key = TokenUtil.generateKey();
-                String token = TokenUtil.encrypt(user.getUsername()+"."+ user.getPassword() + "." + (user.getAdmin() ? "admin" : "employee"), key);
+                String token = TokenUtil.encrypt(user.getUsername()+"."+ user.getPassword() + "." + (user.getAdmin() ? "admin" : "employee") + "." + user.getId(), key);
                 TokenUtil.saveToken(token);
             }
             String fxmFile, cssFile;
             AppUtils.setRole(user.getAdmin() ? "admin" : "user");
             AppUtils.setUsername(user.getUsername());
+            AppUtils.setId(user.getId());
             fxmFile = rootDirectory + (user.getAdmin() ? "admin/user-management.fxml": "home/home.fxml");
             cssFile = user.getAdmin() ? "static/css/user-management.css": "static/css/home.css";
             UIUtils.handleSwitchOtherScene(event, fxmFile, cssFile);
