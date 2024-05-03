@@ -58,13 +58,14 @@ public class AuthenticationController implements Initializable {
             } catch (Exception e) {
                 throw new RuntimeException(e);
             }
-            System.out.println("chay vao day");
         });
         inputNameLogin.textProperty().addListener((observable, oldValue, newValue) -> checkFields());
         inputPasswordLogin.textProperty().addListener((observable, oldValue, newValue) -> checkFields());
         checkFields();
     }
     private void login(ActionEvent event) throws Exception {
+        System.out.println("chay vao day");
+
         EmployeeEntity user = dao.login(inputNameLogin.getText().trim(), inputPasswordLogin.getText().trim());
         if (user != null) {
             if (remember.isSelected()) {
